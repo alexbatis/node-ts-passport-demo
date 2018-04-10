@@ -1,0 +1,51 @@
+{
+  "name": "nodets-passport",
+  "version": "1.0.0",
+  "description": "node + express + ts + passport",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd build && node main",
+    "compile": "node build.js && backpack build",
+    "dev": "node build.js && backpack dev | pino -o 'short'",
+    "test": "node build.js && mocha test/**/*.ts --exit"
+  },
+  "dependencies": {
+    "@types/bcrypt-nodejs": "^0.0.30",
+    "@types/express-session": "^1.15.8",
+    "@types/express-validator": "^3.0.0",
+    "@types/passport": "^0.4.4",
+    "@types/passport-local": "^1.0.33",
+    "bcrypt-nodejs": "^0.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.1.2",
+    "mongoose": "^5.0.14",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pino": "^4.7.3",
+    "source-map-support": "^0.4.15",
+    "swagger-express-middleware": "^1.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.20",
+    "@types/chai": "^4.1.2",
+    "@types/express": "^4.0.35",
+    "@types/mocha": "^2.2.48",
+    "@types/pino": "^4.7.1",
+    "awesome-typescript-loader": "^3.4.1",
+    "backpack-core": "^0.4.3",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "shelljs": "^0.7.8",
+    "supertest": "^3.0.0",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.3.2",
+    "typescript": "^2.7.2"
+  },
+  "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)"
+}
